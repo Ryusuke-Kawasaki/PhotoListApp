@@ -18,15 +18,15 @@ class PictureService: NSObject {
     }
     
     private func initializeDataList() {
-        let pic1 = Picture(title: "犬", fileName: "dog.jpg")
-        let pic2 = Picture(title: "猫", fileName: "cat.jpg")
-        let pic3 = Picture(title: "ペンギン", fileName: "penguin.jpg")
+        let pic1 = Picture(title: "犬", fileName: "dog")
+        let pic2 = Picture(title: "猫", fileName: "cat")
+        let pic3 = Picture(title: "ペンギン", fileName: "penguin")
         animals += [pic1,pic2,pic3]
         
-        let pic4 = Picture(title: "コスモス", fileName: "cosmos.jpg")
-        let pic5 = Picture(title: "バラ", fileName: "rose.jpg")
-        let pic6 = Picture(title: "ひまわり", fileName: "sunflower.jpg")
-        let pic7 = Picture(title: "チューリップ", fileName: "tulip.jpg")
+        let pic4 = Picture(title: "コスモス", fileName: "cosmos")
+        let pic5 = Picture(title: "バラ", fileName: "rose")
+        let pic6 = Picture(title: "ひまわり", fileName: "sunflower")
+        let pic7 = Picture(title: "チューリップ", fileName: "tulip")
         plants += [pic4,pic5,pic6,pic7]
     }
     
