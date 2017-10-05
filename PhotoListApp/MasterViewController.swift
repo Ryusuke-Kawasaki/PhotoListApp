@@ -34,7 +34,7 @@ class MasterViewController: UITableViewController {
         }
         return "動物"
     }
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -51,10 +51,10 @@ class MasterViewController: UITableViewController {
         
         
         var picture:Picture?
-        if (indexPath as NSIndexPath).section == 0 {
-            picture = pictureService.pictureInAnimalsAtIndex((indexPath as NSIndexPath).row)
-        }else if (indexPath as NSIndexPath).section == 1 {
-            picture = pictureService.pictureInPlantsAtIndex((indexPath as NSIndexPath).row)
+        if indexPath.section == 0 {
+            picture = pictureService.pictureInAnimalsAtIndex(indexPath.row)
+        }else if indexPath.section == 1 {
+            picture = pictureService.pictureInPlantsAtIndex(indexPath.row)
         }
         
         if let pic = picture {

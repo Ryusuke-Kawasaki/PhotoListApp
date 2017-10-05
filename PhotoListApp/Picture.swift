@@ -8,13 +8,7 @@
 
 import UIKit
 
-class Picture: NSObject {
+struct Picture {
     var title = ""
-    var fileName = ""
-    
-    init(title:String,fileName:String) {
-        super.init()
-        self.title = title
-        self.fileName = fileName
-    }
+    var fileName = ""    
 }
